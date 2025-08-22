@@ -1,7 +1,6 @@
 package ku.cs.services;
 
 import org.junit.jupiter.api.BeforeEach;
-import ku.cs.services.StudentHardCodeDatasource;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -18,8 +17,7 @@ class StudentHardCodeDatasourceTest {
     @Test
     @DisplayName("Check Arr Size")
     void CheckArrSize() {
-        //datasource.readData();
-        //assertEquals(4,datasource.size());
+        assertEquals(4,datasource.readData().getStudents().size());
     }
 
 
